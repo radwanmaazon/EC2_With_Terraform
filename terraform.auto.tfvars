@@ -6,9 +6,9 @@ cidr_block      = ["172.31.100.0/24", "172.31.101.0/24", "172.31.102.0/24", "172
 # instance_ami    = "ami-0b72821e2f351e396"
 instance_type   = "t2.micro"
 security_groups_ingress = [{
-        from_port   = 0
-        to_port     = 0
-        protocol    = "-1"
+        from_port   = 22
+        to_port     = 22
+        protocol    = "TCP"
         cidr_blocks = "0.0.0.0/0"
     }
     ]
